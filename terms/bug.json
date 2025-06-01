@@ -1,5 +1,5 @@
 {
-  "path": "/glossary/bug.json",
+  "path": "/terms/bug.json",
   "term": "Bug",
   "definition": "Programmers use the phrase bug to refer to broken code with a fault or flaw. These are pieces of code that cause a program crash or send an error message."
 }
