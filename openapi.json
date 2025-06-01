@@ -1,0 +1,11 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Test API",
+    "description": "Test API",
+    "version": "0.0.1"
+  },
+  "servers": [],
+  "paths": {
+  }
+}
