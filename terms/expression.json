@@ -1,0 +1,5 @@
+{
+  "path": "/terms/expression.json",
+  "term": "expression",
+  "definition": "An expression is a combination of literals, variables, operators, and function calls that, when evaluated, produces a value."
+}
