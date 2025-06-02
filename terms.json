@@ -1,0 +1,16 @@
+{
+  "terms": [{
+    "path": "/terms/bug.json",
+    "term": "Bug",
+    "definition": "Programmers use the phrase bug to refer to broken code with a fault or flaw. These are pieces of code that cause a program crash or send an error message."
+  }, {
+    "path": "/terms/command.json",
+    "term": "Command",
+    "definition": "A command is an action to ask a computer to perform. For example, when you click to open a file, you're initiating a command that the computer obeys."
+  }, {
+    "path": "/terms/expression.json",
+    "term": "Expression",
+    "definition": "An expression is a combination of literals, variables, operators, and function calls that, when evaluated, produces a value."
+  }],
+  "total": 3
+}
