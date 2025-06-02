@@ -5,7 +5,89 @@
     "description": "Test API",
     "version": "0.0.1"
   },
-  "servers": [],
+  "servers": [
+    {
+      "url": "https://mtso.github.io/testapi",
+      "description": "Test API server"
+    }
+  ],
   "paths": {
+    "/terms.json": {
+      "get": {
+        "description": "Returns all terms",
+        "operationId": "term_list",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "List of all terms",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "terms": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/TermJson"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/terms/{term}.json": {
+      "get": {
+        "description": "Returns a term",
+        "operationId": "term_get",
+        "parameters": [
+          {
+            "name": "term",
+            "in": "path",
+            "description": "The term ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of all terms",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TermJson"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "TermJson": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "description": "The relative path to the term",
+            "type": "string"
+          },
+          "term": {
+            "description": "The name of the term.",
+            "type": "string"
+          },
+          "definition": {
+            "description": "The definition of the term.",
+            "type": "string"
+          }
+        }
+      }
+    }
   }
 }
