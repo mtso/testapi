@@ -11,6 +11,10 @@
     "path": "/terms/expression.json",
     "term": "Expression",
     "definition": "An expression is a combination of literals, variables, operators, and function calls that, when evaluated, produces a value."
+  }, {
+    "path": "/terms/object.json",
+    "term": "Object",
+    "definition": "An object is a combination of code and data that can be treated as a unit."
   }],
-  "total": 3
+  "total": 4
 }
